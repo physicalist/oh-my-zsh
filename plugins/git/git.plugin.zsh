@@ -3,6 +3,7 @@ alias g='git'
 compdef g=git
 alias gts gst='git status'
 compdef _git gst=git-status
+compdef _git gts=git-status
 alias gd='git diff'
 compdef _git gd=git-diff
 alias gl='git pull'
@@ -54,6 +55,8 @@ compdef gcount=git
 alias gcl='git config --list'
 alias gcp='git cherry-pick'
 compdef _git gcp=git-cherry-pick
+alias gls='git log --stat'
+compdef _git gls=git-log
 alias glg='git log --stat --max-count=5'
 compdef _git glg=git-log
 alias glgg='git log --graph --max-count=5'
@@ -81,6 +84,8 @@ alias gg='git gui citool'
 alias gga='git gui citool --amend'
 alias gk='gitk --all --branches'
 alias gsts='git stash show --text'
+alias gsl='git stash list'
+
 
 # Will cd into the top of the current repository
 # or submodule.
